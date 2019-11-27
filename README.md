@@ -5,6 +5,12 @@ This repository is created for comparing the 3 models for building up a recommen
 - Matrix factorization
 - Neural Network
 
+### Methodology
+
+- Collaborative Filtering
+- Matrix Factorization
+- Neural Network
+
 ### Files in the folder
 
 - `data\`
