@@ -9,6 +9,7 @@ This repository is created for comparing the 3 models for building up a recommen
 ### Methodology
 
 - Collaborative Filtering
+  
 - Matrix Factorization
 - Neural Network
 
