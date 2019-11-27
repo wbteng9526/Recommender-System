@@ -4,13 +4,12 @@ from sklearn.model_selection import train_test_split
 
 
 HEADER = ['UserId', 'ItemId', 'rating', 'timestamp']
-#path = "C:\\Users\\wbten\\OneDrive\\Desktop\\BU\\Fall 2018\\DS90-09\\GitHub_project"
-path = "C:\\Users\\Wenbin Teng\\Desktop\\localfolder\\Python ML\\viax"
+
 
 def load_data(ratio):
     print("Loading data...")
     
-    rating_file = pd.read_csv(path + "\\data\\u.data", sep = '\t', names = HEADER)
+    rating_file = pd.read_csv("u.data", sep = '\t', names = HEADER)
     n_users = rating_file.UserId.unique().shape[0]
     n_items = rating_file.ItemId.unique().shape[0]
     

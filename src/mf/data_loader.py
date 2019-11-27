@@ -3,14 +3,12 @@ import pandas as pd
 
 
 HEADER = ['UserId', 'ItemId', 'rating', 'timestamp']
-#path = "C:\\Users\\wbten\\OneDrive\\Desktop\\BU\\Fall 2018\\DS90-09\\GitHub_project"
-path = "C:\\Users\\Wenbin Teng\\Desktop\\localfolder\\Python ML\\viax"
 
 
 def load_data(args):
     print('loading data ...')
 
-    rating_file = path + "\\data\\u.data"
+    rating_file = "u.data"
     rating_np = pd.read_csv(rating_file,sep = '\t', names = HEADER)
     rating_np = rating_np.values
     rating_np = rating_np[:, 0:3]  # remove timestamp
