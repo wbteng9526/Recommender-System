@@ -18,7 +18,7 @@ This repository is created for comparing the 3 models for building up a recommen
     ![github-small](img/cfsimpearson.png)
   - Prediction
   
-  ![github-small](img/mfpred.png)
+  ![github-small](img/cfpred.png)
 - Matrix Factorization
   - Prediction
   
