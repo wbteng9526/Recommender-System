@@ -11,11 +11,16 @@ This repository is created for comparing the 3 models for building up a recommen
 - Collaborative Filtering
   - Similarity
     - Cosine
-    ![](https://github.com/wbteng9526/RecommenderSystem/tree/master/img/cfsimcos.png)
+    
+![](https://github.com/wbteng9526/RecommenderSystem/tree/master/img/cfsimcos.png)
+
     - Pearson coefficient
-    ![](https://github.com/wbteng9526/RecommenderSystem/tree/master/img/cfsimpearson.png)
+    
+![](https://github.com/wbteng9526/RecommenderSystem/tree/master/img/cfsimpearson.png)
+
   - Prediction
-  ![](https://github.com/wbteng9526/RecommenderSystem/img/tree/master/cfpred.png)
+  
+![](https://github.com/wbteng9526/RecommenderSystem/img/tree/master/cfpred.png)
 - Matrix Factorization
 - Neural Network
 
