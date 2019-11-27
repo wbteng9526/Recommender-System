@@ -18,9 +18,17 @@ This repository is created for comparing the 3 models for building up a recommen
     ![github-small](img/cfsimpearson.png)
   - Prediction
   
-  ![github-small](img/cfpred.png)
+  ![github-small](img/mfpred.png)
 - Matrix Factorization
+  - Prediction
+  
+  ![github-small](img/mfpred.png)
+  - Loss
+  
+  ![github-small](img/mfloss.png)
 - Neural Network
+
+![github-small](img/nn.png)
 
 ### Files in the folder
 
