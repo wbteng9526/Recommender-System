@@ -12,7 +12,7 @@ This repository is created for comparing the 3 models for building up a recommen
   - Similarity
     - Cosine
     
-    ![](img/cfsimcos.png | height = 50)
+    ![github-small](img/cfsimcos.png)
     - Pearson coefficient
     
     ![github-small](img/cfsimpearson.png)
