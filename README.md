@@ -18,5 +18,24 @@ This repository is created for comparing the 3 models for building up a recommen
 The code has been tested running under Python 3.7.3, with the following packages installed (along with their dependencies):
 - tensorflow == 1.14.0
 - numpy == 1.16.4
+- sklearn == 0.21.2
 
 ### Running this code
+
+Run collaborative filtering
+```
+$ cd src/cf
+$ python main.py
+```
+
+Run matrix factorization
+```
+$ cd src/mf
+$ python main.py
+```
+
+Run neural network
+```
+$ cd src/nn
+$ python main.py
+```
