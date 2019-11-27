@@ -1,5 +1,6 @@
 ## Recommender System
 
+### Introduction
 This repository is created for comparing the 3 models for building up a recommender system:
 - Collaborative filtering
 - Matrix factorization
