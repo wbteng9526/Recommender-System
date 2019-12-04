@@ -44,8 +44,8 @@ def train(args,data_info):
             if step % 10 == 0:
                 print('epoch %d    train loss: %.4f  rmse: %.4f    val loss: %.4f  rmse: %.4f    test loss: %.4f  rmse: %.4f'
                       % (step, train_loss, train_rmse, val_loss, val_rmse, test_loss, test_rmse))
-                
-        return train_rmse_ls, val_rmse_ls, test_rmse_ls, epoch
+        prediction = model.predict(sess,feed_dict=get_feed_dict(test_data,model,0,len(test_data)))        
+        return train_rmse_ls, val_rmse_ls, test_rmse_ls, prediction, epoch
 
 
 
@@ -62,7 +62,7 @@ def plot_metrics(rmse_info):
     train_rmse_ls = rmse_info[0]
     val_rmse_ls = rmse_info[1]
     test_rmse_ls = rmse_info[2]
-    epoch = rmse_info[3]
+    epoch = rmse_info[4]
     plt.plot(epoch, train_rmse_ls, label = 'train', color = 'red')
     plt.plot(epoch, val_rmse_ls, label = 'valid', color = 'green')
     plt.plot(epoch, test_rmse_ls, label = 'test', color = 'blue')

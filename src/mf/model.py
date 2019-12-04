@@ -7,7 +7,7 @@ class MatrixFactorization(object):
         self._parse_args(args, n_user, n_item)
         self._build_params()
         self._build_embeddings()
-        self.predict()
+        self._predict()
         self._build_loss()
         self._build_train()
         
@@ -47,7 +47,7 @@ class MatrixFactorization(object):
         self.item_bias = tf.nn.embedding_lookup(params = self.item_bias_vector, ids = self.item_indices)
         
         
-    def predict(self):
+    def _predict(self):
         self.predicted_ratings = tf.reduce_sum(self.user_features * self.item_features, axis=-1)
         self.predicted_ratings_with_bias = self.predicted_ratings + self.user_bias + self.item_bias
         
@@ -67,6 +67,10 @@ class MatrixFactorization(object):
         
     def train(self, sess, feed_dict):
         return sess.run(self.optimizer,feed_dict)
+    
+    
+    def predict(self, sess, feed_dict):
+        return sess.run(self.predicted_ratings_with_bias,feed_dict)
     
     
     def validation(self, sess, feed_dict):

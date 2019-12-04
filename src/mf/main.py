@@ -22,7 +22,7 @@ def main():
     data_info = load_data(args)
     rmse_info = train(args, data_info)
     plot_metrics(rmse_info)
-    
+    return rmse_info
     
     
 
